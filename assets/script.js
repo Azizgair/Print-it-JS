@@ -86,11 +86,15 @@ document.addEventListener('DOMContentLoaded', () => {
 document.querySelector('.arrow_left').addEventListener('click', () => {
 	stopAutoSlide();
 	prevSlide();
+	startAutoSlide();
+	nextSlide();
 });
 
 document.querySelector('.arrow_right').addEventListener('click', () => {
 	stopAutoSlide();
 	nextSlide();
+	startAutoSlide();
+	prevSlide();
 });
 
 showSlide(currentSlide);
