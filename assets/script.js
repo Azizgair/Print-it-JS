@@ -17,13 +17,14 @@ const slides = [
 	}
 ]
 
+
 let currentSlide = 0;
 let autoSlideInterval;
 
 function startAutoSlide() {
 	autoSlideInterval = setInterval(() => {
 		nextSlide();
-	}, 2000);
+	}, 3000);
 }
 function stopAutoSlide() {
 	clearInterval(autoSlideInterval);
@@ -89,17 +90,10 @@ document.addEventListener('DOMContentLoaded', () => {
 	startAutoSlide();
 });
 
-document.querySelector('.arrow_left').addEventListener('click', () => {
-	stopAutoSlide();
-	prevSlide();
-	startAutoSlide();
+document.querySelector('.arrow_right').addEventListener("click", () => {
 	nextSlide();
 });
-
-document.querySelector('.arrow_right').addEventListener('click', () => {
-	stopAutoSlide();
-	nextSlide();
-	startAutoSlide();
+document.querySelector('.arrow_left').addEventListener('click', () => {
 	prevSlide();
 });
 
