@@ -56,12 +56,7 @@ function updateDots(index) {
 		dot.onclick = () => {
 			stopAutoSlide();
 			showSlide(i);
-			//stopAutoSlide();
-			//showSlide(i);
-			setTimeout(startAutoSlide(), 2000);
-			//prevSlide()
-			//stopAutoSlide();
-			//setTimeout(prevSlide(), 4000);
+			setTimeout(startAutoSlide(), 1000);
 		};
 		dotsContainer.appendChild(dot);
 	}
